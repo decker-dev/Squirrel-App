@@ -1,10 +1,36 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import './pages/Squirrel'
-import 'bootstrap/dist/css/bootstrap.css'
-import Squirrel from './pages/Squirrel';
 
-/*
+import 'bootstrap/dist/css/bootstrap.css'
+
+import App from './components/App'
+
+
+const container = document.getElementById('root')
+ReactDom.render(
+
+   <App/> , container)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*
 const name = 'Pedro'
 const user = {
     firstName: 'Decker',
@@ -27,8 +53,3 @@ function getGreeting(userf) {
 }
 
 const element = getGreeting(user);*/
-
-const container = document.getElementById('root')
-ReactDom.render(
-
-   <Squirrel/> , container)

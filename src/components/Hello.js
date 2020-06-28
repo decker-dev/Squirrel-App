@@ -1,15 +1,18 @@
 import React from 'react'
-function Hello(props) {
-
-    return (
-        <div className="container-fluid"
-        style={{ padding:"0px"
+import { Link } from 'react-router-dom'
+const Hello = ({ username }) => (
+    <div className="container-fluid"
+        style={{
+            padding: "0px"
         }}
-        >
-            <nav className="navbar navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">{props.username}</a>
-            </nav>
-        </div>
-    )
-}
+    >
+        <nav className="navbar navbar-dark bg-dark">
+            <Link className="navbar-brand" to="/squirrel/new">
+                {username}
+
+            </Link>
+        </nav>
+    </div>
+)
+
 export default Hello
