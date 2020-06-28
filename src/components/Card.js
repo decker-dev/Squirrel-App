@@ -12,10 +12,10 @@ class Card extends React.Component {
             this.setState({
                 image:'https://github.githubassets.com/images/icons/emoji/shipit.png'
             })
-        },200)
+        },2000)
     }
     render() {
-        const { title, description } = this.props
+        const { title,img, description } = this.props
         return (
             <div className="card container" 
             style={{ background:red
@@ -24,7 +24,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="mx-auto">
-                            <img src={this.state.image} />
+                            <img src={img} />
                         </div>
                         <div className="mx-auto row ">
                             <h1> {title} </h1>

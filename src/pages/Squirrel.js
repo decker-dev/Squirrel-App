@@ -1,24 +1,29 @@
 import React from 'react'
 import Card from '../components/Card'
 import Hello from '../components/Hello';
+import SquirrelList from '../components/SquirrelList';
 class Squirrel extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            data: [{
+                "id": 1,
+            }, {
+                "id": 2,
+            }]
+        }
+    }
     render() {
         return (
             <div>
                 <Hello
                     username="Decker"
                 />
-                <Card
-                    title="Detective"
-                    description="Aliquip deserunt nisi ipsum consequat non. Cupidatat id proident sint non aliquip. Dolor nostrud cupidatat dolor dolore et occaecat sint nostrud id do quis aliqua duis commodo. Amet anim laborum cupidatat laborum mollit aute ex enim Lorem ea eiusmod esse. Do commodo deserunt aliquip non duis elit do do excepteur sunt."
-                    img="https://github.githubassets.com/images/icons/emoji/shipit.png"
+    <SquirrelList
+    SquirrelList={this.state.data}
+    />
 
-                />
-                <Card
-                    title="Ardilla"
-                    description="Aliquip deserunt nisi ipsum consequat non. Cupidatat id proident sint non aliquip. Dolor nostrud cupidatat dolor dolore et occaecat sint nostrud id do quis aliqua duis commodo. Amet anim laborum cupidatat laborum mollit aute ex enim Lorem ea eiusmod esse. Do commodo deserunt aliquip non duis elit do do excepteur sunt."
-                    img="https://github.githubassets.com/images/icons/emoji/shipit.png"
-                />
+
             </div>
         )
     }
