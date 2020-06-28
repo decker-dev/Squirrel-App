@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from '../components/Card'
 import Hello from '../components/Hello';
 import SquirrelList from '../components/SquirrelList';
 class Squirrel extends React.Component {
@@ -19,10 +18,21 @@ class Squirrel extends React.Component {
                 <Hello
                     username="Decker"
                 />
-    <SquirrelList
-    SquirrelList={this.state.data}
-    />
-
+                <SquirrelList
+                    SquirrelList={this.state.data}
+                />
+                <form>
+                    <div className="form-group">
+                        <label >Example select</label>
+                        <select className="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
 
             </div>
         )
