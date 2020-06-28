@@ -15,7 +15,7 @@ class Card extends React.Component {
         },200)
     }
     render() {
-        const { title, img, description } = this.props
+        const { title, description } = this.props
         return (
             <div className="card container" 
             style={{ background:red

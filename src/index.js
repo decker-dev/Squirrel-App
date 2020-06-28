@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Card from './components/Card'
+import './pages/Squirrel'
 import 'bootstrap/dist/css/bootstrap.css'
+import Squirrel from './pages/Squirrel';
+
 /*
 const name = 'Pedro'
 const user = {
@@ -27,8 +29,6 @@ function getGreeting(userf) {
 const element = getGreeting(user);*/
 
 const container = document.getElementById('root')
-ReactDom.render(<Card
-    title="Ardilla"
-    description="Aliquip deserunt nisi ipsum consequat non. Cupidatat id proident sint non aliquip. Dolor nostrud cupidatat dolor dolore et occaecat sint nostrud id do quis aliqua duis commodo. Amet anim laborum cupidatat laborum mollit aute ex enim Lorem ea eiusmod esse. Do commodo deserunt aliquip non duis elit do do excepteur sunt."
-    img="https://github.githubassets.com/images/icons/emoji/shipit.png"
-/>, container)
+ReactDom.render(
+
+   <Squirrel/> , container)
